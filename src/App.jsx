@@ -1,6 +1,7 @@
 import "./App.css";
 import { NavLink, Routes, Route } from "react-router-dom";
 import Profile from "./Profile";
+import Friends from "./Friends";
 
 const Messages = () => {
   return <h2>Это страница с сообщениями</h2>;
@@ -8,13 +9,12 @@ const Messages = () => {
 const Settings = () => {
   return <h2>Это страница с настройками</h2>;
 };
-const Friends = () => {
-  return <h2>Это страница с друзьями</h2>;
-};
 
-function App() {
+
+function App(props) {
+  console.log(props)
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="row">
         <div className="col-3">
           <div

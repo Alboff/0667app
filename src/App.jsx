@@ -1,9 +1,7 @@
 import "./App.css";
 import { NavLink, Routes, Route } from "react-router-dom";
+import Profile from "./Profile";
 
-const Profile = () => {
-  return <h2>Это страница с профилем</h2>;
-};
 const Messages = () => {
   return <h2>Это страница с сообщениями</h2>;
 };
@@ -12,7 +10,7 @@ const Settings = () => {
 };
 const Friends = () => {
   return <h2>Это страница с друзьями</h2>;
-}
+};
 
 function App() {
   return (

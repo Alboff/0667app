@@ -10,9 +10,8 @@ const Settings = () => {
   return <h2>Это страница с настройками</h2>;
 };
 
-
 function App(props) {
-  console.log(props)
+  console.log(props);
   return (
     <div className="container mt-5">
       <div className="row">
@@ -37,7 +36,7 @@ function App(props) {
         </div>
         <div className="col-9">
           <Routes>
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/profile" element={<Profile function = {props.function}/>} />
             <Route path="/messages" element={<Messages />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/friends" element={<Friends />} />
